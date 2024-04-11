@@ -1,0 +1,26 @@
+*{
+ font-family: sans-serif;
+
+}
+.h_header{
+ height: 8vh;   
+}
+.h_side{
+    height: 92vh;
+}
+.h_info{
+    height: 10vh;
+}
+.dash{
+    
+    height: 100%;
+}
+.font_s{
+    font-size: x-small;
+}
+.font_m{
+    font-size: small;
+}
+.margin_s{
+ margin-left: 1rem;
+}
