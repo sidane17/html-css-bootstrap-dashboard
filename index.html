@@ -18,94 +18,191 @@
 
   <body>
     <header>
-        <nav class="navbar navbar-expand bg-body-tertiary px-3 h_header container-fluid ps-0 pe-0 ">
+        <nav class="d-flex navbar navbar-expand bg-white px-3 h_header container-fluid ps-0 pe-0 ">
             <a class="navbar-brand" href="#">
                 <img src="logo.svg" alt="">
             </a>
-            <input class="form-control me-2 " type=" search" placeholder="&#127859 Prova a cercare Lezioni di Laravel" aria-label="Search">
-            <div class="d-flex gap-3">
-              <i class="d-none d-sm-inline fa-solid fa-list-ul"></i>
-              <i class="d-none d-sm-inline fa-solid fa-circle-question"></i>
-              <i class="d-none d-sm-inline fa-solid fa-ellipsis-vertical"></i>
-              <i class="fa-solid fa-bell" style="color: #ff8c00;"></i>
+            <input class="me-2 w-75 " type=" search" placeholder="&#127859 Prova a cercare Lezioni di Laravel" aria-label="Search">
+            <div class="d-flex gap-3 justify-self-end dropdown">
+              <button class="bg-white border-0 " ><i class="d-none d-sm-inline fa-solid fa-list-ul"></i></button>
+              <button class="bg-white border-0"><i class="d-none d-sm-inline fa-solid fa-circle-question"></i></button>
+              <button class="bg-white border-0"><i class="d-none d-sm-inline fa-solid fa-ellipsis-vertical"></i></button>
+              <button class="bg-white border-0 dropdown-toggle"  type="button" data-bs-toggle="dropdown"aria-expanded="false">
+                <i class="fa-solid fa-bell " style="color: #ff8c00;"></i>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
             </div>
           </nav>
     </header>
-    <main>
+    <main >
         
         <div class="d-flex flex-row " style="height: fit-content ;">
             <!-- primo elemto -->
             <!-- side-bar -->
-            <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark h_side col-2">
+            <div class="d-flex flex-column flex-shrink-0 p-3  h_side col-2 fit" style="background-color:rgb(5, 30, 52) ;">
                 <ul class="nav nav-pills flex-column mb-auto pt-4">
                 <li class="dashed">
                     <a href="#" class="nav-link active" aria-current="page">
                         <i class="fa-solid fa-house"></i>
-                    Home
+                    <span class="hide">Home</span>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="nav-link text-white">
                         <i class="fa-solid fa-chart-simple"></i>
-                    Stats
+                    <span class="hide">stats</span>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="nav-link text-white">
                         <i class="fa-solid fa-signal"></i>
-                    Signal
+                    <span class="hide">Signal</span>
                     </a>
                 </li>
                 </ul>
                 <hr>
-                <div class="dropdown">
-                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="">
+                <a href="#" class="d-flex align-items-center center  text-white text-decoration-none " >
                     <i class="fa-solid fa-gear me-2"></i>
-                    <strong> Admin</strong>
+                    <strong><span class="hide">Admin </span></strong>
                 </a>
-                <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-                    <li><a class="dropdown-item" href="#">New project...</a></li>
-                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Sign out</a></li>
-                </ul>
+               
                 </div>
             </div>
             <!-- secondo blocco -->
-            <div class="container-fluid d-flex flex-column p-0 m-0">
+            <div class="container-fluid d-flex flex-column  justify-content-around align-items-center  p-0 m-0" style="background-color: rgb(248, 249, 250);">
                 
                 <!-- header_main -->
                     <div class="container-fluid  p-0 mb-0">
                         <div class="d-flex h_info">
-                            <div  class="col-12 d-flex p-0 m-0" style="background-color: #007bff; color: white;">
-                                <div class="col-5 d-flex flex-column " style="">
-                                    <div class="d-flex align-items-center gap-1">
-                                        <h4>Boolean</h4>
-                                        <span > piano blaze</span>
+                            <div  class="col-12 d-flex mobile_flex p-0 m-0 d-flex justify-content-around" style="background-color: rgb(27, 114, 232); color: white;">
+                                <div class="col-5 mobile d-flex flex-column font_s   justify-content-center align-items-start ms-4 " >
+                                    <div class="d-flex align-items-center gap-1 ">
+                                        <h4 class="d-flex align-items-center text-start">Boolean</h4>
+                                        <span class="ps-1 pe-1 rounded" style="background-color: rgb(22, 91, 186);"> piano blaze</span>
                                     </div>
                                     <div class="d-flex align-items-center gap-2">
-                                        <span> 3 app</span>                            
-                                        <span> Boolean Mobile </span>                            
-                                        <span> Boolean web app </span>                            
-                                        <span> boolean blog app </span>                            
+                                        <span class="ps-1 pe-1  rounded" style="background-color: rgb(22, 91, 186);"> 3 app</span>
+                                        <i class="fa-solid fa-angles-right"></i> 
+                                        <nav class="navbar navbar-expand-lg ">
+                                            <div class="container-fluid ">
+                                              
+                                              <button class="navbar-toggler border-0 "  type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"  style="background-color: rgb(22, 91, 186);">
+                                                <span class="text-white">+</i></span>
+                                              </button>
+                                              <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                                                <ul class="navbar-nav">
+                                                  <li class="nav-item">
+                                                    <a class="nav-link active text-white p-1 rounded me-1" style="background-color: rgb(22, 91, 186);" aria-current="page" href="#">Home</a>
+                                                  </li>
+                                                  <li class="nav-item ">
+                                                    <a class="nav-link text-white p-1 rounded me-1" style="background-color: rgb(22, 91, 186);" href="#">Features</a>
+                                                  </li>
+                                                  <li class="nav-item ">
+                                                    <a class="nav-link text-white p-1 rounded me-1" style="background-color: rgb(22, 91, 186);" href="#">Pricing</a>
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </nav>
+                  
                                     </div>
                                 </div>
-                                <div class="col-4 flex-column ">
+                                <div class="col-4 mobile flex-column d-flex  justify-content-center align-items-center font">
                                     <p class=" m-1">Studenti online egli ultimi 30 minuti</p>
                                     <h4 >125</h4>
                                 </div>
-                                <div class="col-2 d-flex" style="">
+                                <div class="col-2 mobile d-flex  justify-content-center align-items-center" >
                                     <span>Nuovo Studente </span>
-                                    <div class="border"><i class="fa-solid fa-plus"></i></div>
+                                    <button class="border p-1 rounded d-flex justify-content-center align-items-center ms-1 bg-primary text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="width: 2rem; height: 2rem;">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </button>
+
+
+                                    <!-- toggle -->
+                                    <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header ">
+                                        <h5 class="offcanvas-title toggle_h"  id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <div class="row mb-3">
+                                            <div class="col-6 d-flex flex-column ">
+                                                <span>Nome</span>
+                                                <input type="text" class="rounded  border border-secondary">
+                                            </div><div class="col-6 d-flex flex-column">
+                                                <span>Cognome</span>
+                                                <input type="text" class="rounded  border border-secondary">
+                                            </div>
+                                        </div>
+                                        <div class="row  mb-3">
+                                            <div class="col-6 d-flex flex-column">
+                                                <span>email</span>
+                                                <input type="email" class="rounded  border border-secondary">
+                                            </div>
+                                            <div class="col-6 d-flex flex-column">
+                                                <span>Password</span>
+                                                <input type="password" class="rounded  border border-secondary">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-12 d-flex flex-column">
+                                                <span>Indirizzo</span>
+                                                <input type="text" class="rounded  border border-secondary">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-6 d-flex flex-column">
+                                                <span>Città</span>
+                                                <input type="email" class="rounded  border border-secondary">
+                                            </div>
+                                            <div class="col-3 d-flex flex-column">
+                                                <span>stato</span>
+                                                <input type="password" class="rounded  border border-secondary" placeholder="Scegli...">
+                                            </div>
+                                            <div class="col-3 d-flex flex-column">
+                                                <span>CAP</span>
+                                                <input type="text" class="rounded  border border-secondary">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-12 d-flex flex-column ">
+                                                <span>FOTO</span>
+                                                <input type="file" class="rounded border border-secondary" placeholder="Nessun file selezionato">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-12 d-flex flex-column ">
+                                                <span><input type="radio" class="rounded border border-secondary me-2 mt-3" placeholder="Nessun file selezionato">Seleziona per proseguire</span>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <div class="col-1">
+                                                <button class="p-1 bg-primary border-0 rounded text-white"> Salva</button>
+                                            </div>
+                                            <div class="col-1">
+                                                <button class="p-1 bg-warning border-0 rounded ">Svuota</button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>  
-                    <!-- primo blocco -->
-                    <div class="conteiner_fluid d-flex p-0 m-0 dash justufy-content-center " >
-                        <div class="col-8 " style="background-color: #ffffff;  ">
-                        <div class="conteiner_fluid m-3 rounded">
+                    
+                    <div class=" d-flex p-0 m-0 dash justufy-content-center main_div h_main_mobile"  style="overflow: auto; border-style: dashed;height: calc(100vh - 3rem - 5rem)" >
+                        <!-- primo blocco -->
+                        <div class="col-8 primo " style="background-color: #ffffff;   ">
+                            
+                        <div class="conteiner_fluid m-3 rounded border">
+                            
                             <!-- tabella -->
                             <table class="table table-sm font_s rounded-3  ">
                                 <h3 class="bg-body-secondary mb-0 p-1 rounded-top">Prossime classi</h3>
@@ -124,10 +221,10 @@
                                     <th scope="row" ><span><img src="class-avatar.jpg" alt="" style="width: 1.1rem;" ></span> Classe 75</th>
                                     <td class="pt-0 pb-0 ">15 feb 2021</td>
                                     <td class="pt-0 pb-0 ">20%</td>
-                                    <td class="pt-0 pb-0 "><div class="bg-success text-center rounded text-white">done</div></td>
+                                    <td class="pt-0 pb-0 d-flex justify-content-center align-items-center"><div class="bg-success text-center rounded text-white col-8">done</div></td>
                                     <td class="pt-0 pb-0 "><div class="d-flex gap-1">
-                                        <button class="col-6 text-center border rounded bg-white"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="col-6 text-center border rounded bg-white"><i class="fa-solid fa-trash"></i></button>
+                                        <button class="col-5 text-center border rounded bg-white"><i class="fa-solid fa-pencil"></i></button>
+                                        <button class="col-5 text-center border rounded bg-white"><i class="fa-solid fa-trash"></i></button>
                                     </div></td>
                                   </tr>
                                   <!-- 2 -->
@@ -135,10 +232,10 @@
                                     <th scope="row" ><span><img src="class-avatar.jpg" alt="" style="width: 1.1rem;" ></span> Classe 76</th>
                                     <td>15 feb 2021</td>
                                     <td>20%</td>
-                                    <td><div class="bg-success text-center rounded text-white">done</div></td>
+                                    <td class="d-flex justify-content-center align-items-center"><div class="bg-success text-center rounded text-white col-8">done</div></td>
                                     <td><div class="d-flex gap-1">
-                                        <button class="col-6 text-center border rounded bg-white"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="col-6 text-center border rounded bg-white"><i class="fa-solid fa-trash"></i></button>
+                                        <button class="col-5 text-center border rounded bg-white"><i class="fa-solid fa-pencil"></i></button>
+                                        <button class="col-5 text-center border rounded bg-white"><i class="fa-solid fa-trash"></i></button>
                                     </div></td>
                                   </tr>
                                   <!-- 3 -->
@@ -146,10 +243,10 @@
                                     <th scope="row"><span><img src="class-avatar.jpg" alt="" style="width: 1.1rem;" ></span> Classe 77</th>
                                     <td >15 feb 2021 </td>
                                     <td>20%</td>
-                                    <td><div class="bg-warning text-center rounded text-white">done</div></td>
+                                    <td class="d-flex justify-content-center align-items-center"><div class="bg-warning text-center rounded text-white col-8">Process</div></td>
                                     <td><div class="d-flex gap-1">
-                                        <button class="col-6 text-center border rounded bg-white"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="col-6 text-center border rounded bg-white"><i class="fa-solid fa-trash"></i></button>
+                                        <button class="col-5 text-center border rounded bg-white"><i class="fa-solid fa-pencil"></i></button>
+                                        <button class="col-5 text-center border rounded bg-white"><i class="fa-solid fa-trash"></i></button>
                                     </div></td>
                                   </tr>
                                   <!-- 4 -->
@@ -157,10 +254,10 @@
                                     <th scope="row"><span><img src="class-avatar.jpg" alt="" style="width: 1.1rem;" ></span> Classe 77</th>
                                     <td >15 feb 2021 </td>
                                     <td>20%</td>
-                                    <td><div class="bg-warning text-center rounded text-white">done</div></td>
+                                    <td class="d-flex justify-content-center align-items-center"><div class="bg-success text-center rounded text-white col-8">done</div></td>
                                     <td><div class="d-flex gap-1">
-                                        <button class="col-6 text-center border rounded bg-white"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="col-6 text-center border rounded bg-white"><i class="fa-solid fa-trash"></i></button>
+                                        <button class="col-5 text-center border rounded bg-white"><i class="fa-solid fa-pencil"></i></button>
+                                        <button class="col-5 text-center border rounded bg-white"><i class="fa-solid fa-trash"></i></button>
                                     </div></td>
                                   </tr>
                                   <!-- 5 -->
@@ -168,10 +265,10 @@
                                     <th scope="row"><span><img src="class-avatar.jpg" alt="" style="width: 1.1rem;" ></span> Classe 77</th>
                                     <td >15 feb 2021 </td>
                                     <td>20%</td>
-                                    <td><div class="bg-warning text-center rounded text-white">done</div></td>
+                                    <td class="d-flex justify-content-center align-items-center"><div class="bg-danger text-center rounded text-white col-8">failed</div></td>
                                     <td><div class="d-flex gap-1">
-                                        <button class="col-6 text-center border rounded bg-white"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="col-6 text-center border rounded bg-white"><i class="fa-solid fa-trash"></i></button>
+                                        <button class="col-5 text-center border rounded bg-white"><i class="fa-solid fa-pencil"></i></button>
+                                        <button class="col-5 text-center border rounded bg-white"><i class="fa-solid fa-trash"></i></button>
                                     </div></td>
                                   </tr>
                                   <!-- 6 -->
@@ -179,10 +276,10 @@
                                     <th scope="row"><span><img src="class-avatar.jpg" alt="" style="width: 1.1rem;" ></span> Classe 77</th>
                                     <td >15 feb 2021 </td>
                                     <td>20%</td>
-                                    <td><div class="bg-warning text-center rounded text-white">done</div></td>
+                                    <td class="d-flex justify-content-center align-items-center"><div class="bg-success text-center rounded text-white col-8">done</div></td>
                                     <td><div class="d-flex gap-1">
-                                        <button class="col-6 text-center border rounded bg-white"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="col-6 text-center border rounded bg-white"><i class="fa-solid fa-trash"></i></button>
+                                        <button class="col-5 text-center border rounded bg-white"><i class="fa-solid fa-pencil"></i></button>
+                                        <button class="col-5 text-center border rounded bg-white"><i class="fa-solid fa-trash"></i></button>
                                     </div></td>
                                   </tr>
                                   <!-- 7 -->
@@ -190,10 +287,10 @@
                                     <th scope="row"><span><img src="class-avatar.jpg" alt="" style="width: 1.1rem;" ></span> Classe 77</th>
                                     <td >15 feb 2021 </td>
                                     <td>20%</td>
-                                    <td><div class="bg-warning text-center rounded text-white">done</div></td>
+                                    <td class="d-flex justify-content-center align-items-center"><div class="bg-danger text-center rounded text-white col-8">failed</div></td>
                                     <td><div class="d-flex gap-1">
-                                        <button class="col-6 text-center border rounded bg-white"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="col-6 text-center border rounded bg-white"><i class="fa-solid fa-trash"></i></button>
+                                        <button class="col-5 text-center border rounded bg-white"><i class="fa-solid fa-pencil"></i></button>
+                                        <button class="col-5 text-center border rounded bg-white"><i class="fa-solid fa-trash"></i></button>
                                     </div></td>
                                   </tr>
                                   <!-- 8 -->
@@ -201,16 +298,16 @@
                                     <th scope="row" ><span><img src="class-avatar.jpg" alt="" style="width: 1.1rem;" ></span> Classe 77</th>
                                     <td >15 feb 2021 </td>
                                     <td>20%</td>
-                                    <td><div class="bg-warning text-center rounded text-white">done</div></td>
+                                    <td class="d-flex justify-content-center align-items-center"><div class="  bg-success text-center rounded text-white col-8">done</div></td>
                                     <td><div class="d-flex gap-1">
-                                        <button class="col-6 text-center border rounded bg-white"><i class="fa-solid fa-pencil"></i></button>
-                                        <button class="col-6 text-center border rounded bg-white"><i class="fa-solid fa-trash"></i></button>
+                                        <button class="col-5 text-center border rounded bg-white"><i class="fa-solid fa-pencil"></i></button>
+                                        <button class="col-5 text-center border rounded bg-white"><i class="fa-solid fa-trash"></i></button>
                                     </div></td>
                                   </tr>
                                 </tbody>
                               </table>
-                              <!-- finale -->
-                              <div class="accordion accordion-flush font_m table-sm " id="accordionFlushExample">
+                              <!-- FAQ-->
+                              <div class="accordion accordion-flush font_m table-sm border" id="accordionFlushExample">
                                 <h2 class="bg-body-secondary m-0">F.A.Q.</h2>
                                 <div class="accordion-item">
                                   <span class="accordion-header">
@@ -244,54 +341,59 @@
                                 </div>
                               </div>
                         </div>
-                        
-                        
                         </div>
-                        <div class="col-4" style="background-color: #ff8c00;" >
-                            <div >
-                                <h1 class="bg-secondary m-0 p-0"> Todo</h1>
-                                <table class="table bg-secondary m-1 p-1">
-                                    <tbody>
-                                     <table class="table border ">
-                                        <tbody>
-                                          <tr>
-                                            <td>
-                                                <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                  Kickoff nuove  classi
-                                                </label>
-                                              </div>
-                                            </td>
-                                            </tr>
-                                          <tr>
-                                            <td >
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                    <label class="form-check-label" for="flexCheckDefault">
-                                                      Lezione su Boostrap 5 in classe #75
-                                                    </label>
-                                                  </div>
-                                            </td>
-                                           </tr>
-                                          <tr>
-                                            <td >
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                    <label class="form-check-label" for="flexCheckDefault">
-                                                      Controllare username githu studenti
-                                                    </label>
-                                                  </div>
-                                            </td>
-                                           </tr>
-                                        </tbody>
-                                      </table>
-                                    </tbody>
-                                  </table>
+                        <!-- secondo blocco main -->
+                        <div class="col-4 d-flex flex-column align-items-center justify-content-start primo" style="background-color: #ffffff;" >
+                            <!-- Blocco Todo -->
+                            <div class="rounded d-flex flex-column align-items-center justify-content-center mt-3 border" style="width: 90%; height: 20%;">
+                                <h4 class="w-100 bg-body-secondary rounded-top">Todo</h4>
+                                <div class="mb-2 rounded" style="width: 80%;height: fit-content; border: solid; border: grey; ">
+                                <table class=" w-100 p-0 font_m">
+                                    <tr class="border w-100">
+                                        <td><input class="form-check-input ms-1" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                              Default checkbox
+                                            </label></td>
+                                    </tr>
+                                    <tr class="border">
+                                        <td><input class="form-check-input ms-1" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                              Default checkbox
+                                            </label></td>
+                                    </tr>
+                                    <tr class="border">
+                                        <td><input class="form-check-input ms-1" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                              Default checkbox
+                                            </label></td>
+                                    </tr>
+                                </table>
+                                </div>
                             </div>
-                            
-                        
+                            <div class="rounded d-flex flex-column align-items-center justify-content-center mt-2 border" style="width: 90%; height: 80%;">
+                                <div class="d-flex flex-column align-items-center justify-content-start border" style="width: 95%; height: 95%;">
+                                    <div class="w-100 " style="height: 60%;">
+                                         <img src="stats.jpeg"  width="100%"  > 
+                                    </div>
+                                    <div class="font_m w-100 d-flex flex-column ms-3" style="height: fit-content;">
+                                        
+                                        <span>Utenti attivi</span>
+                                        <span class="">Lista degli utenti attivi in piattaforma nell ultimo mese</span>
+                                        <br>
+                                        <span class="w-100 border-top">Gennaio:1200</span>
+                                        <span class="w-100 border-top">Febbraio:800</span>
+                                        <span class="w-100 border-top">Marzo:1500</span>
+                                        <span class="w-100 border-top"><a href="#">Visuaizza repor approfondito</a></span>
+                                    </div>
+                                    
+
+                                </div>
+
+
+                            </div>
+                            <!--  -->
                         </div>
+                       
                     </div> 
            
             </div>
